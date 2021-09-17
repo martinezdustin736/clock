@@ -4,5 +4,6 @@ function setClock(){
     const currentDate = new Date()
     const secondsRatio = currentDate.getSeconds() / 60
     const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60
+    const hourRatio = (minutesRatio + currentDate.getHours()) / 12
 
 }
